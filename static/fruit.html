@@ -1,0 +1,17 @@
+<div id="product_data">	
+	<H3>Fruit Home</h3>
+		<p>{{ fruits.length}} Fruits Available</p>
+	<a href="http://localhost:8080/pages/addNewFruit">Add New Fruit</a>
+	<table id="fruits" border="0" cellspacing="5" cellpadding="10">
+		
+		{{#fruits}}<tr>
+			<td class="product"> <a href="http://localhost:8080/pages/fruits/{{name}}"> <font color="{{color}}"> {{name}} </font> - (${{price}})</a> </td><td> <a href="http://localhost:8080/pages/editFruit/{{name}}">Edit</a> </td><td> <a href="http://localhost:8080/action/deleteFruit/{{name}}">Delete Fruit</a> </td></tr>
+		{{/fruits}}
+		{{^fruits}}
+			<tr><td> No Fruit Available</td></tr>
+		{{/fruits}}
+		
+		
+	</table>
+	
+</div>

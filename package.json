@@ -1,0 +1,12 @@
+{
+  "name": "MyFruit",
+  "version": "1.0.0",
+  "description": "My first project",
+  "main": "fruitServer.js",
+  "dependencies": {
+	"express" : "*",
+    "mongodb": "~2.0",
+	"body-parser" : "*",
+	"mustache-express" : "*"
+  }  
+}
